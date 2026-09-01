@@ -2,19 +2,6 @@
 
 A simple Java program from the CODSOFT internship exercises that calculates student grades based on exam marks. This repository folder contains a lightweight console application meant for learning and demonstration of basic Java input/output, arithmetic, and control flow.
 
-## Table of Contents
-
-- [Project overview](#project-overview)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Build & Run](#build--run)
-- [Usage](#usage)
-- [Project structure](#project-structure)
-- [Contributing](#contributing)
-- [Troubleshooting](#troubleshooting)
-- [License](#license)
-- [Contact](#contact)
-
 ## Project overview
 
 This program reads student marks (from console input or a simple file, depending on the implementation in this folder) and computes the total, average, and grade for each student. It is intended as an educational example for beginners learning Java.
@@ -30,37 +17,6 @@ This program reads student marks (from console input or a simple file, depending
 
 - Java Development Kit (JDK) 8 or later installed and available in your PATH.
 - A command-line shell (Terminal on macOS/Linux, PowerShell or Command Prompt on Windows) or an IDE such as IntelliJ IDEA, Eclipse, or VS Code with Java support.
-
-## Build & Run
-
-You can run the program either from an IDE or from the command line.
-
-From the command line (Unix/macOS):
-
-1. Compile all Java files into an `out` directory:
-
-```bash
-mkdir -p out
-javac -d out $(find . -name "*.java")
-```
-
-2. Run the program by specifying the main class. Replace `MainClassName` with the program's main class (for example `StudentGradeCalculator` or `Main`):
-
-```bash
-java -cp out MainClassName
-```
-
-On Windows (PowerShell):
-
-```powershell
-mkdir out
-Get-ChildItem -Recurse -Filter *.java | ForEach-Object { $_.FullName } | ForEach-Object { javac -d out $_ }
-java -cp out MainClassName
-```
-
-If the project uses a package, run `java` with the fully qualified class name (for example `com.example.StudentGradeCalculator`). If you're unsure what the main class name is, look for the file containing `public static void main(String[] args)`.
-
-Alternatively, open the folder in your IDE and run the class that contains the `main` method.
 
 ## Usage
 
