@@ -1,11 +1,11 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class NumberGame {
+public class NumberGameApplication {
 
 public static void main(String[] args) {
 
-	NumberGame game = new NumberGame();
+	NumberGameApplication game = new NumberGameApplication();
 
 	Scanner sc = new Scanner(System.in);
 	while(true){
@@ -31,8 +31,14 @@ public static void main(String[] args) {
 				System.out.println("\nEnter Valid choice\n");
 				break;
 		}
+
+
 	}
+
 }
+
+
+
 
 public void startGame(){
 	Scanner sc = new Scanner(System.in);
@@ -42,6 +48,8 @@ public void startGame(){
 	System.out.println("|| GAME STARTED. GUESS THE NUMBER ||");
 	System.out.println("||--------------------------------||\n");
 	System.out.print("\nGuess the number: ");
+		int points = 50;
+		int score = points;
 		int usernumber = sc.nextInt();
 		sc.nextLine();
 		while (randomnumber != usernumber){
@@ -55,9 +63,12 @@ public void startGame(){
 			System.out.print("\nGuess again: ");
 			usernumber = sc.nextInt();
 			sc.nextLine();
+			score = points --;
 			}
 		System.out.println("\n\nCongratulations. Your guess is right the number is: "+ randomnumber+"\n");
-		sc.nextLine();			
-  }
+		System.out.println("Your Score is: "+score+" out of 50");
+		sc.nextLine();
+			
+}
 
 }
